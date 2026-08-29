@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>XQORA Demo App</title>
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; color: #222; }
+  h1 { color: #1a4d8f; }
+  .card { border: 1px solid #ddd; border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; }
+  button { background: #1a4d8f; color: white; border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; }
+  pre { background: #f5f5f5; padding: 10px; border-radius: 6px; overflow-x: auto; }
+</style>
+</head>
+<body>
+  <h1>XQORA Demo Application</h1>
+  <div class="card">
+    <p>This is the demo app used to exercise the one-click deployment platform.</p>
+    <button onclick="ping()">Call /api/info</button>
+    <button onclick="visit()">Call /api/visits</button>
+    <button onclick="health()">Call /health</button>
+    <pre id="out">Result will appear here...</pre>
+  </div>
+
+  <script>
+    async function show(url) {
+      const res = await fetch(url);
+      const data = await res.json();
+      document.getElementById('out').textContent = JSON.stringify(data, null, 2);
+    }
+    const ping = () => show('/api/info');
+    const visit = () => show('/api/visits');
+    const health = () => show('/health');
+  </script>
+</body>
+</html>

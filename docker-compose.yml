@@ -1,0 +1,28 @@
+services:
+  xqora-demo-app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+      args:
+        APP_VERSION: ${APP_VERSION:-dev}
+    image: xqora-demo-app:${APP_VERSION:-dev}
+    container_name: xqora-demo-app
+    ports:
+      - "${HOST_PORT:-3000}:3000"
+    environment:
+      - APP_VERSION=${APP_VERSION:-dev}
+      - PORT=3000
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+    networks:
+      - xqora-net
+
+networks:
+  xqora-net:
+    name: xqora-net
+    driver: bridge
