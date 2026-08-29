@@ -140,13 +140,4 @@ endpoint (e.g. change `/health` to return a 500) and re-run `./scripts/deploy.sh
 it will report `DEPLOYMENT FAILED`, automatically roll back to the last good
 image, and confirm the rollback's own health check.
 
-## 10. 6-Day build plan (for reference)
 
-| Day | Task |
-|-----|------|
-| 1 | Design project architecture and create the demo application |
-| 2 | Containerize the application using Docker and Docker Compose |
-| 3 | Develop automated environment validation and setup scripts |
-| 4 | Build the one-command deployment automation |
-| 5 | Implement deployment validation, rollback, and logging |
-| 6 | Create cleanup automation, perform testing, and prepare final documentation |
