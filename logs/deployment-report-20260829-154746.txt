@@ -1,0 +1,10 @@
+XQORA Deployment Report
+========================
+Date/Time (UTC):     2026-08-29T15:48:22Z
+Version/Build:       1.0.0
+Deployment Status:   DEPLOYMENT FAILED
+Health-check Result: N/A
+Errors:              Port 3001 is not accessible after container start.
+Rollback Status:     succeeded
+
+Full run log: /home/xqora/xqora-deploy-platform/logs/deploy-20260829-154746.log

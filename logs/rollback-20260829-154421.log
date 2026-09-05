@@ -1,0 +1,12 @@
+===== rollback started at 2026-08-29T15:44:22Z =====
+[2026-08-29T15:44:22Z] [STEP] 1/5  Stopping the failed version
+ Container xqora-demo-app Stopping 
+ Container xqora-demo-app Stopped 
+[2026-08-29T15:44:25Z] [OK] Stopped current container(s)
+[2026-08-29T15:44:25Z] [STEP] 2/5  Restoring previously working version
+[2026-08-29T15:44:25Z] [ERROR] No previous working version found to roll back to.
+XQORA Rollback Report
+======================
+Date/Time (UTC): 2026-08-29T15:44:25Z
+Triggered by:    deploy failure: Port 3000 is not accessible after container start.
+Result:          FAILED - no previous good version available

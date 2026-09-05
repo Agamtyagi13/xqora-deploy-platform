@@ -1,0 +1,5 @@
+XQORA Rollback Report
+======================
+Date/Time (UTC): 2026-08-29T15:44:25Z
+Triggered by:    deploy failure: Port 3000 is not accessible after container start.
+Result:          FAILED - no previous good version available

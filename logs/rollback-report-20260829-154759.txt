@@ -1,0 +1,7 @@
+XQORA Rollback Report
+======================
+Date/Time (UTC):     2026-08-29T15:48:22Z
+Triggered by:        deploy failure: Port 3001 is not accessible after container start.
+Restored version:    1.0.0
+Post-rollback health: UP
+Result:              SUCCESS

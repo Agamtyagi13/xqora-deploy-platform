@@ -1,0 +1,21 @@
+===== rollback started at 2026-08-29T15:48:00Z =====
+[2026-08-29T15:48:14Z] [STEP] 1/5  Stopping the failed version
+ Container xqora-demo-app Stopping 
+ Container xqora-demo-app Stopped 
+[2026-08-29T15:48:17Z] [OK] Stopped current container(s)
+[2026-08-29T15:48:17Z] [STEP] 2/5  Restoring previously working version
+[2026-08-29T15:48:18Z] [OK] Found backed-up version to restore: 1.0.0
+[2026-08-29T15:48:18Z] [STEP] 3/5  Restarting the previous environment
+ Container xqora-demo-app Starting 
+ Container xqora-demo-app Started 
+[2026-08-29T15:48:19Z] [OK] Restarted container(s) using version: 1.0.0
+[2026-08-29T15:48:19Z] [STEP] 4/5  Verifying the application is working again
+[2026-08-29T15:48:22Z] [OK] Post-rollback health check passed (attempt 1)
+[2026-08-29T15:48:22Z] [STEP] 5/5  Generating rollback logs
+XQORA Rollback Report
+======================
+Date/Time (UTC):     2026-08-29T15:48:22Z
+Triggered by:        deploy failure: Port 3001 is not accessible after container start.
+Restored version:    1.0.0
+Post-rollback health: UP
+Result:              SUCCESS

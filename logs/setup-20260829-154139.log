@@ -1,0 +1,19 @@
+===== setup started at 2026-08-29T15:41:39Z =====
+[2026-08-29T15:41:39Z] [STEP] 1/6  Checking required tools
+[2026-08-29T15:41:40Z] [OK] Found required tool: docker (Docker version 29.1.3, build 29.1.3-0ubuntu4.1)
+[2026-08-29T15:41:43Z] [OK] Found Docker Compose (docker compose)
+[2026-08-29T15:41:43Z] [OK] Found HTTP client (curl/wget) for health checks
+[2026-08-29T15:41:43Z] [STEP] 2/6  Validating Docker installation
+[2026-08-29T15:42:26Z] [OK] Docker daemon is running and reachable
+[2026-08-29T15:42:26Z] [STEP] 3/6  Checking available ports
+[2026-08-29T15:42:27Z] [OK] Port 3000 is available
+[2026-08-29T15:42:27Z] [STEP] 4/6  Creating required directories
+[2026-08-29T15:42:27Z] [OK] Directory ready: /home/xqora/xqora-deploy-platform/logs
+[2026-08-29T15:42:27Z] [OK] Directory ready: /home/xqora/xqora-deploy-platform/backups
+[2026-08-29T15:42:27Z] [OK] Directory ready: /home/xqora/xqora-deploy-platform/config
+[2026-08-29T15:42:27Z] [STEP] 5/6  Generating environment configuration
+[2026-08-29T15:42:27Z] [OK] Wrote configuration to /home/xqora/xqora-deploy-platform/.env (APP_VERSION=1.0.0, HOST_PORT=3000)
+[2026-08-29T15:42:27Z] [STEP] 6/6  Preparing deployment environment
+[2026-08-29T15:42:27Z] [OK] Found docker-compose.yml
+[2026-08-29T15:42:27Z] [OK] Found application Dockerfile
+[2026-08-29T15:42:27Z] [OK] Environment setup complete. Ready to deploy.

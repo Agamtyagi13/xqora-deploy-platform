@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "version": "1.0.0",
+  "timestamp": "2026-08-29T15:48:22Z",
+  "reason": "Port 3001 is not accessible after container start."
+}
