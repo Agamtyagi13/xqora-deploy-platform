@@ -9431,4 +9431,109 @@ Changes not staged for commit:
 	[31mmodified:   scripts/common.sh[m
 	[31mmodified:   scripts/deploy.sh[m
 	[31mmodified:   scripts/rollback.sh[m
-	[31mmodified:   scripts/setu
+	[31mmodified:   scripts/setup.sh[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.deploy-state.json[m
+	[31m.env[m
+	[31mbackups/[m
+	[31mlogs/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git push origin mai[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004lREADME.md  [0m[01;34mapp[0m  [01;34mbackups[0m  [01;34mconfig[0m  docker-compose.yml  [01;34mlogs[0m  [01;34mscreenshot[0m  [01;34mscripts[0m
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git push origin main
+[?2004lEverything up-to-date
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ it [K[K[Kgit remote -v
+[?2004lorigin	https://github.com/Agamtyagi13/xqora-deploy-platform.git (fetch)
+origin	https://github.com/Agamtyagi13/xqora-deploy-platform.git (push)
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git remote -vpush origin main
+[?2004lEverything up-to-date
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$  [K]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$  ls
+[?2004lREADME.md  [0m[01;34mapp[0m  [01;34mbackups[0m  [01;34mconfig[0m  docker-compose.yml  [01;34mlogs[0m  [01;34mscreenshot[0m  [01;34mscripts[0m
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ code .
+[?2004l[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git init
+[?2004lReinitialized existing Git repository in /home/xqora/xqora-deploy-platform/.git/
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   scripts/cleanup.sh[m
+	[31mmodified:   scripts/common.sh[m
+	[31mmodified:   scripts/deploy.sh[m
+	[31mmodified:   scripts/rollback.sh[m
+	[31mmodified:   scripts/setup.sh[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.deploy-state.json[m
+	[31m.env[m
+	[31mbackups/[m
+	[31mlogs/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git add .
+[?2004l[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git co[K[Kstatus
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   .deploy-state.json[m
+	[32mnew file:   .env[m
+	[32mnew file:   backups/last-good-version.txt[m
+	[32mnew file:   logs/deploy-20260829-154251.log[m
+	[32mnew file:   logs/deploy-20260829-154746.log[m
+	[32mnew file:   logs/deployment-report-20260829-154251.txt[m
+	[32mnew file:   logs/deployment-report-20260829-154746.txt[m
+	[32mnew file:   logs/rollback-20260829-154421.log[m
+	[32mnew file:   logs/rollback-20260829-154759.log[m
+	[32mnew file:   logs/rollback-report-20260829-154421.txt[m
+	[32mnew file:   logs/rollback-report-20260829-154759.txt[m
+	[32mnew file:   logs/session-recording.txt[m
+	[32mnew file:   logs/setup-20260829-154139.log[m
+	[32mnew file:   logs/setup-20260829-154251.log[m
+	[32mnew file:   logs/setup-20260829-154746.log[m
+	[32mmodified:   scripts/cleanup.sh[m
+	[32mmodified:   scripts/common.sh[m
+	[32mmodified:   scripts/deploy.sh[m
+	[32mmodified:   scripts/rollback.sh[m
+	[32mmodified:   scripts/setup.sh[m
+
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git commit -m"added"
+[?2004l[main 8052c54] added
+ 20 files changed, 9769 insertions(+)
+ create mode 100644 .deploy-state.json
+ create mode 100644 .env
+ create mode 100644 backups/last-good-version.txt
+ create mode 100644 logs/deploy-20260829-154251.log
+ create mode 100644 logs/deploy-20260829-154746.log
+ create mode 100644 logs/deployment-report-20260829-154251.txt
+ create mode 100644 logs/deployment-report-20260829-154746.txt
+ create mode 100644 logs/rollback-20260829-154421.log
+ create mode 100644 logs/rollback-20260829-154759.log
+ create mode 100644 logs/rollback-report-20260829-154421.txt
+ create mode 100644 logs/rollback-report-20260829-154759.txt
+ create mode 100644 logs/session-recording.txt
+ create mode 100644 logs/setup-20260829-154139.log
+ create mode 100644 logs/setup-20260829-154251.log
+ create mode 100644 logs/setup-20260829-154746.log
+ mode change 100644 => 100755 scripts/cleanup.sh
+ mode change 100644 => 100755 scripts/common.sh
+ mode change 100644 => 100755 scripts/deploy.sh
+ mode change 100644 => 100755 scripts/rollback.sh
+ mode change 100644 => 100755 scripts/setup.sh
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ ls
+[?2004lREADME.md  [0m[01;34mapp[0m  [01;34mbackups[0m  [01;34mconfig[0m  docker-compose.yml  [01;34mlogs[0m  [01;34mscreenshot[0m  [01;34mscripts[0m
+[?2004h]0;xqora@AgamTyagi: ~/xqora-deploy-platform[01;32mxqora@AgamTyagi[00m:[01;34m~/xqora-deploy-platform[00m$ git push origin main
+[?2004lEnumerating objects: 22, done.
+Counting objects:   4% (1/22)Counting objects:   9% (2/22)Counting objects:  13% (3/22)Counting objects:  18% (4/22)Counting objects:  22% (5/22)Counting objects:  27% (6/22)Counting objects:  31% (7/22)Counting objects:  36% (8/22)Counting objects:  40% (9/22)Counting objects:  45% (10/22)Counting objects:  50% (11/22)Counting objects:  54% (12/22)Counting objects:  59% (13/22)Counting objects:  63% (14/22)Counting objects:  68% (15/22)Counting objects:  72% (16/22)Counting objects:  77% (17/22)Counting objects:  81% (18/22)Counting objects:  86% (19/22)Counting objects:  90% (20/22)Counting objects:  95% (21/22)Counting objects: 100% (22/22)Counting objects: 100% (22/22), done.
+Delta compression using up to 6 threads
+Compressing objects:   5% (1/18)Compressing objects:  11% (2/18)Compressing objects:  16% (3/18)Compressing objects:  22% (4/18)Compressing objects:  27% (5/18)Compressing objects:  33% (6/18)Compressing objects:  38% (7/18)Compressing objects:  44% (8/18)Compressing objects:  50% (9/18)Compressing objects:  55% (10/18)Compressing objects:  61% (11/18)Compressing objects:  66% (12/18)Compressing objects:  72% (13/18)Compressing objects:  77% (14/18)Compressing objects:  83% (15/18)Compressing objects:  88% (16/18)Compressing objects:  94% (17/18)Compressing objects: 100% (18/18)Compressing objects: 100% (18/18), done.
+Writing objects:   5% (1/20)Writing objects:  10% (2/20)Writing objects:  15% (3/20)Writing objects:  20% (4/20)Writing objects:  25% (5/20)Writing objects:  30% (6/20)Writing objects:  35% (7/20)Writing objects:  45% (9/20)Writing objects:  55% (11/20)Writing objects:  65% (13/20)Writing objects:  70% (14/20)Writing objects:  75% (15/20)Writing objects:  80% (16/20)Writing objects:  85% (17/20)Writing objects:  90% (18/20)Writing objects:  95% (19/20)Writing objects: 100% (20/20)Writing objects: 100% (20/20), 36.57 KiB | 1.46 MiB/s, done.
+Total 20 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/6)[Kremote: Resolving deltas:  16% (1/6)[Kremote: Resolving deltas:  33% (2/6)[Kremote: 
